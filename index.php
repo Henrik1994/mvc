@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
 <!--head  -->
 <?php require_once("blogs/head.php"); ?>
 
