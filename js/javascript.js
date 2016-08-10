@@ -9,9 +9,9 @@ window.onload = function () {
 			$('.slider').stop().animate({width:"130%", left:"-225px"})
 		
 		} else {
-		
-			$('.slider').css({"left":"auto"})
-			$('.slider').css({"width":"auto"})
+			$('.slider').stop().animate({width:"100%", left:"0px"})
+			// $('.slider').css({"left":"auto"})
+			// $('.slider').css({"width":"auto"})
 		}
 		count++;
 	})

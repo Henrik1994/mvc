@@ -38,7 +38,7 @@ require_once("db.php");
                 $user->surname =$data['surname'];
                 $user->email =$data['email'];
                 $user->login =$data['login'];
-                $user->password = md5($data['password']);
+                $user->password = password_hash($data['password'], PASSWORD_DEFAULT);
                 R::store($user);
 
                     echo '<div style="color: green">Duq grancvel eq</div><hr>';
@@ -89,19 +89,19 @@ require_once("db.php");
     <div class="form-group" >
       <div class="col-xs-4 ">
         <label for="ex3">Name*:</label>
-        <input class="form-control" id="ex3" type="text" name="name" value="<?php echo $data["name"]; ?>" required>
+        <input class="form-control" id="ex3" type="text" name="name" value="<?php echo @$data["name"]; ?>" required>
     
       
         <label for="ex4">Surname*:</label>
-        <input class="form-control" id="ex3" type="text" name="surname" value="<?php echo $data["surname"]; ?>" required>
+        <input class="form-control" id="ex3" type="text" name="surname" value="<?php echo @$data["surname"]; ?>" required>
 
      
        
         <label for="ex5">Email*:</label>
-        <input class="form-control" id="ex3" type="email" name="email" value="<?php echo $data["email"]; ?>" required>
+        <input class="form-control" id="ex3" type="email" name="email" value="<?php echo @$data["email"]; ?>" required>
 
          <label for="ex4">UserName*:</label>
-        <input class="form-control" id="ex3" type="text" name="login" value="<?php echo $data["login"]; ?>" required>
+        <input class="form-control" id="ex3" type="text" name="login" value="<?php echo @$data["login"]; ?>" required>
    
     
         <label for="ex6">Password*:</label>
