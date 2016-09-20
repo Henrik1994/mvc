@@ -32,7 +32,6 @@
               }
           }
           ?>
-<a href="logout.php">log Out</a>
 
 
 
@@ -45,7 +44,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">Logo</a>
+      <a class="navbar-brand" href="index.php"><img src="img/logo.jpg" class="logo" ></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">

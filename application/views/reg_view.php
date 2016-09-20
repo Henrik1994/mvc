@@ -1,73 +1,3 @@
-<?php 
-require_once("db.php");
-?>
-<?php 
-      
-      $data = $_POST;
-      if(isset($data["send"]))
-      {
-          $errors = array();
-          if(trim($data["name"]) == ""){
-              $errors[] = "write name" ;
-            }
-            if(trim($data["surname"]) == ""){
-              $errors[] = "write surname" ;
-            }
-          if(trim($data["email"]) == ""){
-              $errors[] = "write email" ;
-            }
-            if(trim($data["login"]) == ""){
-              $errors[] = "write login" ;
-            }
-            if(trim($data["password"]) == ""){
-              $errors[] = "write password" ;
-            }
-             if(trim($data["rpassword"]) != trim($data["password"])) {
-              $errors[] = "parolnery chen hamnknum" ;
-            }
-            if(R::count('users',"email = ?", array($data['email'])) > 0){
-                $errors[] = "loginy arden grancvac e " ;
-            }
-             if(R::count('users',"login = ?", array($data['login'])) > 0){
-                $errors[] = "email arden grancvac e " ;
-            }
-            if(empty($errors)){
-
-                $user = R::dispense('users');
-                $user->name =$data['name'];
-                $user->surname =$data['surname'];
-                $user->email =$data['email'];
-                $user->login =$data['login'];
-                $user->password = password_hash($data['password'], PASSWORD_DEFAULT);
-                R::store($user);
-
-                    echo '<div style="color: green">Duq grancvel eq</div><hr>';
-
-            }else{
-              echo '<div style="color: red">'.array_shift($errors).'</div><hr>';
-            }
-
-      }
-
-
-
-?>
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <?php require_once("blogs/head.php"); ?>
-
-
-</head>
-<body>
-<?php require_once("blogs/header.php"); ?>
-
-
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 col-md-3 col-lg-3 col-xs-3 sidenav">
@@ -85,7 +15,7 @@ require_once("db.php");
     <div class="col-sm-9 col-md-9 col-lg-9 col-xs-9 ">
      <h2>Form control: input</h2>
   <p>The form below contains two input elements; one of type text and one of type password:</p>
-  <form role="form" action="reg.php" method="POST">
+  <form role="form" action="/reg/store" method="POST">
     <div class="form-group" >
       <div class="col-xs-4 ">
         <label for="ex3">Name*:</label>
@@ -166,17 +96,3 @@ require_once("db.php");
     </div>
   </div>
 </div>
-      
-    
-  
-
-
-
-<footer class="container-fluid">
-  <?php require_once("blogs/footer.php"); ?>
-
-</footer>
-</body>
-</html>
-
-
