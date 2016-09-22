@@ -16,7 +16,11 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
+<<<<<<< HEAD
           <img src="http://placehold.it/800x400?text=IMAGE" alt="Image">
+=======
+          <img src="img/Garni.jpg" alt="Image">
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
           <div class="carousel-caption">
             <h3>Sell $</h3>
             <p>Money Money.</p>
@@ -24,7 +28,11 @@
         </div>
 
         <div class="item">
+<<<<<<< HEAD
           <img src="http://placehold.it/800x400?text=Another Image Maybe" alt="Image">
+=======
+          <img src="img/Garni.jpg" alt="Image">
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
           <div class="carousel-caption">
             <h3>More Sell $</h3>
             <p>Lorem ipsum...</p>
@@ -137,6 +145,18 @@
 
 
 <div class="container text-center">
+<<<<<<< HEAD
+=======
+  <form class="form-inline search" role="form" id="search_form">
+  <div class="form-group">
+
+    <input type="text" class="form-control" name="search_text" id="search_word" placeholder="Search">
+  
+  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search </button>
+  </div>
+</form>
+
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
   <h3>What We Do</h3>
   <br>
   <div class="row ">

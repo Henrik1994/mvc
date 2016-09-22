@@ -14,12 +14,24 @@ class Route
 		if ( !empty($routes[1]) )
 		{	
 			$controller_name = $routes[1];
+<<<<<<< HEAD
+=======
+			if(strpos($controller_name, '?')){
+				$controller_name = explode("?", $controller_name)[0];
+			}
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
 		}
 		
 		// получаем имя экшена
 		if ( !empty($routes[2]) )
 		{
 			$action_name = $routes[2];
+<<<<<<< HEAD
+=======
+			if(strpos($action_name, '?')){
+				$action_name = explode("?", $action_name)[0];
+			}
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
 		}
 
 		if ( !empty($routes[3]) )
@@ -53,6 +65,11 @@ class Route
 		}
 		else
 		{
+<<<<<<< HEAD
+=======
+			var_dump($controller_name);
+			die('Not found');
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
 			/*
 			правильно было бы кинуть здесь исключение,
 			но для упрощения сразу сделаем редирект на страницу 404
@@ -77,6 +94,11 @@ class Route
 		}
 		else
 		{
+<<<<<<< HEAD
+=======
+			var_dump($controller_name);
+			die('Not found');
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
 			// здесь также разумнее было бы кинуть исключение
 			Route::ErrorPage404();
 		}

@@ -13,47 +13,39 @@
     </div>
 
     <div class="col-sm-9">
-<<<<<<< HEAD
-      <h1><small >Loren ipsum</small></h1>
-      <hr>
-      <h4 class="vernagir">Loren ipsum</h4>
-    <span class="label label-primary">Ipsum</span></h5><br>
-=======
-      <h3 class="vernagir">Loren ipsum</h3>
->>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
+     <h2>Form control: input</h2>
+  <p>The form below contains two input elements; one of type text and one of type password:</p>
+  <form role="form" action="" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+	
+      <label for="name" type="hidden" name="action" value="submit">Name:</label>
+        <input type="text" class="form-control" name="name"  value="" required>
+		<span style="color:red"><?php echo @$error_name; ?></span> <br/>
+		
+      <label for="surname">SurName:</label>
+        <input type="text" class="form-control" name="surname" value="" required>
+		<span style="color:red"><?php echo @$error_surname; ?></span> <br/>
+		
+      <label for="email">Email address:</label>
+        <input type="email" class="form-control" name="email" value="" required>
+		<span style="color:red"><?php echo @$error_email; ?></span> <br/>
+		
+      <label for="comment">Message:</label>
+        <textarea class="form-control" rows="10" name="message" required></textarea><br>
+		<span style="color:red"><?php echo @$error_message; ?></span> <br/>
+		
+      <input type="submit" class="btn btn-default" name="send" value="Send email">
+    </div>
+    <h3 class="vernagir">Attention</h3>
       <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <br><br>
-       <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><br>
+    </form>
 
 
 
 
-        <div class="col-sm-4 thumbnail ">
-      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-    <div class="col-sm-4 thumbnail ">
-    <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-    <div class="col-sm-4 thumbnail ">
-     <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
+  
     
-<<<<<<< HEAD
      
    
 
@@ -90,8 +82,6 @@
            </div>
          </div>
        </div> -->
-=======
->>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
       </div>
     </div>
   </div>

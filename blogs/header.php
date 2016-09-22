@@ -32,7 +32,6 @@
               }
           }
           ?>
-<a href="logout.php">log Out</a>
 
 
 

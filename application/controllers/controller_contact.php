@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
 <?php
 
 class Controller_contact extends Controller
@@ -5,7 +9,10 @@ class Controller_contact extends Controller
 	public function action_index()
 	{	
 		$this->view->generate('contact_view.php', 'template_view.php');
+<<<<<<< HEAD
 
+=======
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
 	}
 
 	public function action_mail()
@@ -25,7 +32,10 @@ class Controller_contact extends Controller
 			if(strlen($name)==0){
                 $error_name = "write your name";
                  $error = true;
+<<<<<<< HEAD
                  echo "barev";
+=======
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
             }
 			if(strlen($surname)==0){
                 $error_surname = "write your name";

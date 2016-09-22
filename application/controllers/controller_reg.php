@@ -35,13 +35,26 @@ class Controller_reg extends Controller
 
 		var_dump("SELECT * from users where login = '".$_POST['login']."' and password = '".md5($_POST['password']) ."'"); 
 		$res = $this->model->runQuery("SELECT * from users where login = '".$_POST['login']."' and password = '".md5($_POST['password']) ."'");
+<<<<<<< HEAD
 		var_dump($res);
 		if(count($res) > 0){
 			$_SESSION["user_name"] = $_POST['login'];	
+=======
+
+		if(count($res) > 0){
+			$_SESSION["user_name"] = $_POST['login'];	
+
+			$_SESSION['user_permission'] = $res[0]["permission"];
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
 		} else {
 			$_SESSION["user_name"] = '';
 		}
 
+<<<<<<< HEAD
+=======
+		
+
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
 		header('Location: /');
 
 		// ['description' => 'asdsadsad', 'title' => 'asdasdasdsa']
@@ -74,6 +87,10 @@ class Controller_reg extends Controller
 	public function action_logout(){
 		
 		unset($_SESSION['user_name']);
+<<<<<<< HEAD
+=======
+		unset($_SESSION['user_permission']);
+>>>>>>> 21d5169fc23218d30a75a819af941e9e9cc861b6
 		header('Location: /');
 	}
 }
